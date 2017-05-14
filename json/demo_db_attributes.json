@@ -1,0 +1,11 @@
+{
+  "hana": {
+      "major": { 
+                 "version": "2"
+               },
+    "sid": "MV1",
+    "instance": "00",
+    "password": "Start1234",
+    "revision": ""
+  }
+}

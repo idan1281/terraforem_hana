@@ -1,0 +1,10 @@
+Using password authentication.
+Run automation is created with id 56798
+Automation state preparing
+Automation executing
+Scheduled 1 jobs:
+22734802-85c1-46eb-bb0b-81ffe6b81833
+Job 22734802-85c1-46eb-bb0b-81ffe6b81833 is executing
+Job 22734802-85c1-46eb-bb0b-81ffe6b81833 is failed
+Error: Automation failed. 1 of 1 jobs failed
+
