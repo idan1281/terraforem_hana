@@ -1,3 +1,0 @@
-export LYRA_SERVICE_ENDPOINT=https://lyra.eu-de-1.cloud.sap:443
-export ARC_SERVICE_ENDPOINT=https://arc.eu-de-1.cloud.sap
-export OS_TOKEN=gAAAAABZGDmbNzXCEVtHuMVz2x9TXXGSnN1XX2E5wyfn3eYkP09Re-R4v5h6XinAuoK2qri3b_5amoQMBp5f2fhCGTgln9XrzwSCiPh-u5oRs1KTNrvuulKgzffWkJNoRrgvu3J82ujJFAs_vTg5sngy9NsNYq5PAey6G_jsT9t35bSLe7axeBcYYygqor9bUmb_Tj7yfsJXx5ZDKTskCx4Y5_xQtGiGmfodQwYHw6vDHX1n96Cswcs
