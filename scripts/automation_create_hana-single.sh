@@ -5,8 +5,8 @@
 export INSTANCE_ID=$1
 export HANA_TYPE=$2
 AUTOMATION_NAME=hana-single-auto
-#AUTOMATION_REPO=https://github.wdf.sap.corp/cc-chef-cookbooks/hana.git
-AUTOMATION_REPO=https://github.wdf.sap.corp/c5240533/hana.git
+AUTOMATION_REPO=https://github.wdf.sap.corp/cc-chef-cookbooks/hana.git
+#AUTOMATION_REPO=https://github.wdf.sap.corp/c5240533/hana.git
 REPO_REVISION=master
 BASE_RUNLIST="recipe[hana::install-"
 #RUNLIST="recipe[hana::install-hana-single.rb]"
