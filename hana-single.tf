@@ -67,7 +67,7 @@ resource "openstack_compute_instance_v2" "db_instance"
 
     # generate attribute file in json format
     provisioner  "local-exec" "create_db_json_script" {
-      command = "scripts/json_create-hana-single.sh ${ var.hana_type } ${ var.hana_revision } ${openstack_blockstorage_volume_v2.vol_hana.id} "
+      command = "scripts/json_create-hana-single.sh ${ var.hana_type } ${ var.hana_revision } ${openstack_blockstorage_volume_v2.vol_hana.id} ${var.region}"
     }
 
     # Calling lyra_install script which takes care of lyra client installation locally.
