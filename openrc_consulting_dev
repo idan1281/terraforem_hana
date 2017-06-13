@@ -26,4 +26,4 @@ export ARC_BROKER_URL=tls://arc-broker.eu-de-1.cloud.sap:8883
 export PKI_SERVICE_URL=https://arc-pki.eu-de-1.cloud.sap
 export UPDATE_SERVICE_URL=https://stable.arc.eu-de-1.cloud.sap
 alias tf="terraform"
-export TF_VAR_image=$( openstack image list | grep sles-12-sp2- | awk '{print $4}' )
+export TF_VAR_image=$( openstack image list | grep sles-12-sp1- | awk '{print $4}' )
