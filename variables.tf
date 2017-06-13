@@ -15,3 +15,6 @@ variable "hana_type" { default = "hana-single"}
 #variable "s4h_version" { default = "1506"} #in app json it is referenced as SAPERP_VERSION
 variable "fip_pool" {default = "FloatingIP-internal-monsoon3"}
 
+#Availbility zone selection
+variable "availability_zone" {default = "eu-de-1b"}
+#variable "availability_zone" {default = "ap-au-1b"}

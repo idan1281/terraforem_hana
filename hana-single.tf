@@ -26,6 +26,7 @@ resource "openstack_compute_instance_v2" "db_instance"
   flavor_id = "${var.db_flavor}"
   key_pair = "${var.key_pair}"
   security_groups = ["default"]
+  availability_zone = "${var.availability_zone}"
 
   # Attach the Volume
   volume {
