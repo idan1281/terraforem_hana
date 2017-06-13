@@ -8,6 +8,7 @@ resource "openstack_blockstorage_volume_v2" "vol_hana" {
  region = "${var.region}"
  name = "vol_db"
  description = "Volume for Hana_DB"
+ availability_zone = "${var.availability_zone}"
  size = 100 # in Giga Byte
 }
 
@@ -23,6 +24,7 @@ resource "openstack_compute_instance_v2" "db_instance"
   name = "demo-hana-single"
   region = "${var.region}"
   image_name = "${var.image}"
+ # image_name = "sles-12-sp1-amd64-vmware-build115"
   flavor_id = "${var.db_flavor}"
   key_pair = "${var.key_pair}"
   security_groups = ["default"]
@@ -45,8 +47,8 @@ resource "openstack_compute_instance_v2" "db_instance"
   # Create an internal ip and attach floating ip to it
   network
   {
-    uuid = "431361d3-e329-4f1b-9135-2819a3e9c6cd"
-    name = "Private-corp-sap-shared-01"
+    uuid = "$(var.network_id)" 
+    name = "$(var.network_name)"
     floating_ip = "${openstack_networking_floatingip_v2.db_ip.address}"
     access_network = true  # Whether to use this network to access the instance or provision
   }

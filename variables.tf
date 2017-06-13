@@ -1,7 +1,7 @@
 # Variables section
 variable "region" { default = "eu-de-1" } #Other region `au-ap-1`
 #variable "image" { default = "sles-12-sp1-amd64-vmware-build113" }
-variable "image" { } # the default is the newest sles image - it is being greped via the source file
+variable "image" {} # the default is the newest sles image - it is being greped via the source file
 variable "guest_os" { default = "linux" }
 variable "key_pair" { default = "Idan-Pub2" }
 variable "db_flavor" { default = "60" }
@@ -16,8 +16,8 @@ variable "hana_type" { default = "hana-single"}
 variable "fip_pool" {default = "FloatingIP-internal-monsoon3"}
 
 #Private Network settings
-variable "network_id" {"431361d3-e329-4f1b-9135-2819a3e9c6cd"}
-variable "network_name" {"Private-corp-sap-shared-01"}
+variable "network_id" {default = "431361d3-e329-4f1b-9135-2819a3e9c6cd"}
+variable "network_name" {default = "Private-corp-sap-shared-01"}
 
 #Availbility zone selection
 variable "availability_zone" {default = "eu-de-1b"}
