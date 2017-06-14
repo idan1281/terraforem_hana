@@ -1,5 +1,5 @@
 #!/bin/bash
-export DB_HOST=$1
+export TAG=$1
 export HANA_REVISION=$2
 export DISK_ID=$3
 export REGION=$4
@@ -21,7 +21,8 @@ cat > json/demo_db_attributes.json << EOF
         "disk_id": "$DISK_ID"
     },
     "sapinst": {
-        "region": "$REGION"
+        "region": "$REGION",
+        "db_tag": "$TAG"
     }
 }
 EOF
