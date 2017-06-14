@@ -13,12 +13,12 @@ variable "dns_enabled" { default = "false"}
 variable "hana_revision" { default = "000"}
 variable "hana_type" { default = "hana-single"}
 #variable "s4h_version" { default = "1506"} #in app json it is referenced as SAPERP_VERSION
-variable "fip_pool" {default = "FloatingIP-internal-monsoon3"}
+variable "fip_pool" { default = "FloatingIP-internal-monsoon3" }
 
 #Private Network settings
-variable "network_id" {default = "431361d3-e329-4f1b-9135-2819a3e9c6cd"}
-variable "network_name" {default = "Private-corp-sap-shared-01"}
+variable "net_id" { default = "431361d3-e329-4f1b-9135-2819a3e9c6cd" }
+variable "net_name" { default = "Private-corp-sap-shared-01" }
 
 #Availbility zone selection
-variable "availability_zone" {default = "eu-de-1b"}
-#variable "availability_zone" {default = "ap-au-1b"}
+variable "availability_zone" { default = "eu-de-1b" }
+#variable "availability_zone" { default = "ap-au-1b" }

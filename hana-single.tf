@@ -47,8 +47,10 @@ resource "openstack_compute_instance_v2" "db_instance"
   # Create an internal ip and attach floating ip to it
   network
   {
-    uuid = "$(var.network_id)" 
-    name = "$(var.network_name)"
+    name = "${var.net_name}"
+    uuid = "${var.net_id}"
+   # uuid = "431361d3-e329-4f1b-9135-2819a3e9c6cd"
+   # name = "Private-corp-sap-shared-01"
     floating_ip = "${openstack_networking_floatingip_v2.db_ip.address}"
     access_network = true  # Whether to use this network to access the instance or provision
   }
